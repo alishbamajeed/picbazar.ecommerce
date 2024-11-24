@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    html,
+    body,
+    #root {
+        @apply h-full;
+    }
+}
+
+.ant-dropdown-menu {
+    @apply !px-3 !py-4 !mt-3.5;
+}
+
+.ant-dropdown-menu-root {
+    @apply !p-0;
+}
+
+.ant-dropdown-menu-item {
+    @apply !bg-transparent;
+}
+
+.nav-links-dropdown .ant-dropdown-menu-root {
+    @apply !p-2;
+}
+
+.nav-links-dropdown .ant-dropdown-menu-item {
+    @apply !mt-2 first-of-type:!mt-0;
+}
+
+.nav-links-dropdown .ant-dropdown-menu-title-content {
+    @apply relative !text-[18px] transition-all hover:text-green-600 hover:translate-x-1;
+}
+
+.page-links-dropdown .ant-dropdown-menu {
+    @apply h-[306px] overflow-y-scroll !py-2;
+}
